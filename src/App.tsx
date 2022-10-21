@@ -1,14 +1,12 @@
-import { Header } from "./components/Header/Header";
-import { Section } from "./components/Section/Section";
 import { GlobalStyle } from "./styles/global";
-import { AppContainer } from "./styles/AppContainer";
+import {BrowserRouter} from 'react-router-dom'
+import {Router} from './Router'
 
 export function App() {
   return (
-    <AppContainer>
-      <Header />
-      <Section />
-      <GlobalStyle />
-    </AppContainer>
+    <BrowserRouter>
+        <Router/>
+        <GlobalStyle />
+    </BrowserRouter>
   );
 }

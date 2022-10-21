@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
-export const AppContainer = styled.div `
+export const LayoutContainer = styled.div `
   display: flex;
   flex-direction: column;
-  max-width: 90rem;
+  max-width: 75rem;
   margin: 0 auto;
 `
+
+
