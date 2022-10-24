@@ -9,10 +9,12 @@ export function Header() {
       <nav>
         <Actions>
           <p>
-            <MapPin size={24} />
+            <MapPin size={24} weight="fill" />
             Ilhéus, BA
           </p>
-          <ShoppingCart size={24} />
+          <div>
+            <ShoppingCart size={20} weight="fill" />
+          </div>
         </Actions>
       </nav>
     </HeaderContainer>
