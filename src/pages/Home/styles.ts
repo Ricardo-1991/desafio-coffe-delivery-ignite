@@ -1,11 +1,16 @@
 import styled from 'styled-components'
 
-export const MainContainer = styled.section`
+export const MainContainer = styled.main`
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+
+`
+
+export const SectionContainer = styled.section`
     display: flex;
     align-items: center;
-    margin: 0 auto;
     gap: 1rem;
-    padding: 4rem;
 `
 
 export const MainInfoContainer = styled.section`
@@ -39,21 +44,16 @@ export const IconsInfoContainer = styled.ul`
   }
 `
 interface IconProps {
-  iconColor: keyof typeof ICON_COLOR;
-}
-
-const ICON_COLOR = {
-  orange: 'yellow-900',
-  gray: 'base-text',
-  yellow: 'yellow-700',
-  purple: 'purple-700'
+  iconColor: 'yellow-900' | 'base-text' | 'yellow-700' | 'purple-700',
 }
 
 export const IconContainer = styled.div<IconProps>`
   display: flex;
   border-radius: 50%;
-  background: ${props => props.theme[ICON_COLOR[props.iconColor]]};
+  background: ${props => props.theme[props.iconColor]};
   color: white;
   padding: 8px;
 `
+
+
 
