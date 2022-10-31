@@ -1,7 +1,7 @@
 
 <h1 align="center"> Desafio RocketSeat Coffe-Delivery </h1>
 
-(https://img.shields.io/static/v1?label=&message=%3CEm%20andamento%3E&color=%3CCOLOR%3E)
+https://img.shields.io/static/v1?label=&message=%3CEm%20andamento%3E&color=%3CCOLOR%3E
 
 <h2>Descrição do projeto</h2>
 
